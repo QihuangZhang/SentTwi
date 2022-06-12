@@ -1,0 +1,141 @@
+snscrape --jsonl twitter-search "COVID since:2020-09-01 until:2020-09-1"> Sep1.json
+
+
+snscrape --jsonl twitter-search "COVID since:2020-09-01 until:2020-09-2"> Sep1.json
+
+
+snscrape --jsonl twitter-search "COVID since:2020-09-01 until:2020-09-1"> Sep1.json
+
+
+snscrape twitter-user QihuangZhang > QihuangZhang
+
+
+snscrape --jsonl twitter-search "COVID since:2020-09-01 until:2020-09-02"> mytweets.json
+
+
+
+snscrape twitter-user "ZhangQihuang" >twitter-ZhangQihuang
+
+snscrape --jsonl twitter-search "COVID19 near:Toronto within:30mi since:2020-08-05 until:2020-08-06"> Toronto/TorontoAug05.json
+
+
+
+
+#### Toronto
+
+#$startDate = (Get-Date -Year 2020 -Month 2 -Day 24)
+#$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+$startDate = (Get-Date -Year 2020 -Month 10 -Day 1)
+$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+
+
+for($i = $startDate; $i -lt $endDate; $i = $i.AddDays(1))
+{    snscrape --jsonl twitter-search "COVID19 near:Toronto within:30mi since:$($i.ToString("yyyy-MM-dd")) until:$($i.AddDays(1).ToString("yyyy-MM-dd"))"> Toronto/Toronto$($i.ToString("yyyy-MM-dd")).json
+}
+
+
+
+#### Vancouver
+
+#$startDate = (Get-Date -Year 2020 -Month 2 -Day 24)
+#$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+$startDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+
+
+for($i = $startDate; $i -lt $endDate; $i = $i.AddDays(1))
+{    snscrape --jsonl twitter-search "COVID19 near:Vancouver within:30mi since:$($i.ToString("yyyy-MM-dd")) until:$($i.AddDays(1).ToString("yyyy-MM-dd"))"> Vancouver/Vancouver$($i.ToString("yyyy-MM-dd")).json
+}
+
+
+
+#### Calgary
+
+#$startDate = (Get-Date -Year 2020 -Month 2 -Day 24)
+#$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+$startDate = (Get-Date -Year 2020 -Month 10 -Day 7)
+$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+
+
+
+for($i = $startDate; $i -lt $endDate; $i = $i.AddDays(1))
+{    snscrape --jsonl twitter-search "COVID19 near:\`"Calgary\`" within:30mi since:$($i.ToString("yyyy-MM-dd")) until:$($i.AddDays(1).ToString("yyyy-MM-dd"))"> Calgary/Calgary$($i.ToString("yyyy-MM-dd")).json
+}
+
+
+#### Montreal
+
+#$startDate = (Get-Date -Year 2020 -Month 2 -Day 24)
+#$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+$startDate = (Get-Date -Year 2020 -Month 10 -Day 7)
+$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+
+
+for($i = $startDate; $i -lt $endDate; $i = $i.AddDays(1))
+{    snscrape --jsonl twitter-search "COVID19 near:Montreal within:30mi since:$($i.ToString("yyyy-MM-dd")) until:$($i.AddDays(1).ToString("yyyy-MM-dd"))"> Montreal/Montreal$($i.ToString("yyyy-MM-dd")).json
+}
+
+#### New York
+
+#$startDate = (Get-Date -Year 2020 -Month 2 -Day 24)
+#$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+$startDate = (Get-Date -Year 2020 -Month 10 -Day 7)
+$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+
+
+for($i = $startDate; $i -lt $endDate; $i = $i.AddDays(1))
+{    snscrape --jsonl twitter-search "COVID19 near:\`"New York\`" within:30mi since:$($i.ToString("yyyy-MM-dd")) until:$($i.AddDays(1).ToString("yyyy-MM-dd"))"> New_York/New_York$($i.ToString("yyyy-MM-dd")).json
+}
+
+
+#### Los Angeles
+
+#$startDate = (Get-Date -Year 2020 -Month 2 -Day 24)
+#$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+$startDate = (Get-Date -Year 2020 -Month 10 -Day 7)
+$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+for($i = $startDate; $i -lt $endDate; $i = $i.AddDays(1))
+{    snscrape --jsonl twitter-search "COVID19 near:\`"Los Angeles\`" within:30mi since:$($i.ToString("yyyy-MM-dd")) until:$($i.AddDays(1).ToString("yyyy-MM-dd"))"> Los_Angeles/Los_Angeles$($i.ToString("yyyy-MM-dd")).json
+}
+
+#### Seattle
+
+#$startDate = (Get-Date -Year 2020 -Month 2 -Day 24)
+#$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+$startDate = (Get-Date -Year 2020 -Month 10 -Day 7)
+$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+
+
+for($i = $startDate; $i -lt $endDate; $i = $i.AddDays(1))
+{    snscrape --jsonl twitter-search "COVID19 near:\`"Seattle\`" within:30mi since:$($i.ToString("yyyy-MM-dd")) until:$($i.AddDays(1).ToString("yyyy-MM-dd"))"> Seattle/Seattle$($i.ToString("yyyy-MM-dd")).json
+}
+
+
+
+#### Chicago
+
+#$startDate = (Get-Date -Year 2020 -Month 2 -Day 24)
+#$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+$startDate = (Get-Date -Year 2020 -Month 10 -Day 7)
+$endDate = (Get-Date -Year 2020 -Month 10 -Day 14)
+
+
+
+for($i = $startDate; $i -lt $endDate; $i = $i.AddDays(1))
+{    snscrape --jsonl twitter-search "COVID19 near:\`"Chicago\`" within:30mi since:$($i.ToString("yyyy-MM-dd")) until:$($i.AddDays(1).ToString("yyyy-MM-dd"))"> Chicago/Chicago$($i.ToString("yyyy-MM-dd")).json
+}
