@@ -10,7 +10,11 @@ While the impact of the COVID-19 pandemic has been widely studied, relatively fe
 ## Data 
 In this repository, we include the sentiment scores data generated in the study at  [data folder](https://github.com/QihuangZhang/SentTwi/tree/main/data). The files in the folder include time series of sentiment scores for the topic of "COVID-19", "vaccine", "mask", and "lockdown".
 
-
+For the citation of the data, please use:
+ Zhang, Qihuang, et al. "Text mining and sentiment analysis of COVID-19 tweets." arXiv preprint arXiv:2106.15354 (2021).
+> *Text mining and sentiment analysis of COVID-19 tweets. *<br />
+> <small>Zhang Q., Yi G. Y., Chen L.-P., and He W. (2021)<br /></small>
+> arXiv preprint arXiv:2106.15354. [https://arxiv.org/abs/2106.15354](https://arxiv.org/abs/2106.15354) 
 
 ## Code File Structure
 ### Data Analaysis
