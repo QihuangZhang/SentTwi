@@ -11,10 +11,11 @@ While the impact of the COVID-19 pandemic has been widely studied, relatively fe
 In this repository, we include the sentiment scores data generated in the study at  [data folder](https://github.com/QihuangZhang/SentTwi/tree/main/data). The files in the folder include time series of sentiment scores for the topic of "COVID-19", "vaccine", "mask", and "lockdown".
 
 For the citation of the data, please use:
- Zhang, Qihuang, et al. "Text mining and sentiment analysis of COVID-19 tweets." arXiv preprint arXiv:2106.15354 (2021).
-> *Text mining and sentiment analysis of COVID-19 tweets. *<br />
-> <small>Zhang Q., Yi G. Y., Chen L.-P., and He W. (2021)<br /></small>
-> arXiv preprint arXiv:2106.15354. [https://arxiv.org/abs/2106.15354](https://arxiv.org/abs/2106.15354) 
+
+> *Sentiment analysis and causal learning of COVID-19 tweets prior to the rollout of vaccines.*<br />
+> <small>Zhang Q., Yi G. Y., Chen L.-P., and He W. (2023)<br /></small>
+> Plos one 18.2: e0277878. [https://doi.org/10.1371/journal.pone.0277878](https://doi.org/10.1371/journal.pone.0277878)
+
 
 ## Code File Structure
 ### Data Analaysis
@@ -22,7 +23,6 @@ For the citation of the data, please use:
 * [Sentiment Analysis - RoBERTa](https://github.com/QihuangZhang/SentTwi/blob/main/code/python/sentimentanalysis_roBERTa.py)
 * [Example of Resevoir Commputing (Echo State Network)](https://github.com/QihuangZhang/COVID-AR-Error/blob/main/code/python/RC_compute.py)
 * [Cross-validation in determine the optiomal parameters of Echo State Network](https://github.com/QihuangZhang/SentTwi/blob/main/code/python/crossvalid.py)
-* [Example of Resevoir Commputing (Echo State Network)](https://github.com/QihuangZhang/COVID-AR-Error/blob/main/code/python/RC_compute.py)
 
 
 ### Data visalization
